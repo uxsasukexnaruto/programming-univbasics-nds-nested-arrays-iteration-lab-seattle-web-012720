@@ -8,11 +8,11 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   row_index = 0  
   while src[row_index] do 
-    element_row_index = 0 
-    while src[row_index][element_row_index] do 
-      expression.push("I love #{src[row][0]} and #{} on my pizza")
-      element_row_index += 1 
-    end 
+    
+    
+      expression.push("I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza")
+       
+    
     row_index += 1 
   end 
   expression

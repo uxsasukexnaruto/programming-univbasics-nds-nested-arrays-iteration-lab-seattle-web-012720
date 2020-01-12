@@ -25,7 +25,10 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   count = 0 
   while src[count] do 
-    larger.push([])
+    larger.push([src[count].max])
+    count += 1 
+  end
+  larger
 end
 
 def total_even_pairs(src)

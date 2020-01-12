@@ -3,9 +3,19 @@ def join_ingredients(src)
   #
   # Build a new Array that contains strings where each pair of foods is
   # inserted into this template:
-  #
+  expression = []
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
+  row_index = 0  
+  while src[row_index] do 
+    element_row_index = 0 
+    while src[row_index][element_row_index] do 
+      expression.push("I love #{src[row][0]} and #{} on my pizza")
+      element_row_index += 1 
+    end 
+    row_index += 1 
+  end 
+  expression
 end
 
 def find_greater_pair(src)
